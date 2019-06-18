@@ -1,12 +1,13 @@
-
+#Implement Merge Sort and explain its performance using the Big O notation
 def mergeSort(L):
     if len(L)> 1:
-        mid = len(L)// 2
-        A = L[:mid]
-        B = L[mid:]
+        mid = len(L)// 2 # finding out the mid of the array
+        A = L[:mid]# A array is halfed 
+        B = L[mid:]# B array is also halfed
+        #the array elements have been divided 
 
-        mergeSort(A)
-        mergeSort(B)
+        mergeSort(A) # this function callled the first half of the array
+        mergeSort(B) # this function also called the second half of the array
 
         i = j = k = 0
 
@@ -18,7 +19,7 @@ def mergeSort(L):
                 L[k] = B[j]
                 j+=1
             k+=1
-
+        #the while loop if there are any elemts left 
         while i < len(A):
             L[k] = A[i]
             i+=1
@@ -28,18 +29,18 @@ def mergeSort(L):
             j+=1
             k+=1
         #the function below prints the list
-
+# ths function prints the list
 def merge(L):
     for i in range(len(L)):
-        print(L[i],end=" ")
+        print(L[i])
     print()
-
+# the main function tests the code above
 if __name__ == '__main__':
-    L = [12, 11, 13, 5, 6, 7]
-    print ("The array given is", end="\n")
+    L = [11, 10, 12, 4, 5, 6]
+    print ("The array given is")
     merge(L)
     mergeSort(L)
-    print("Sorted array is now: ", end="\n")
+    print("Sorted array is now: ")
     merge(L)
             
 
