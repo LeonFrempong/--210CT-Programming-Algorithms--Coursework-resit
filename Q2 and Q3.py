@@ -24,21 +24,21 @@ class List(object):
           elif self.tail==n:
               self.tail=x
 
-     
+     # the function below in the deleled function that has been implemented.
       
       def delete(self,n, x):
-            if n.prev != None:
-                  n.prev.next=n.next
+            if n.prev != None: #checks if there is a previous node in the list
+                  n.prev.next=n.next# the previous node is then point to the next node in the list
             else:
                   self.head = n.next
-                  if n.next != None:
-                        n.next.prev = n.prev
+                  if n.next != None: # checks if there is a next node
+                        n.next.prev = n.prev #the next node can be pointed to the previous node 
                   else:
                         self.tail = n.prev
         #the function below is to find the middle element(s) in the list
 
       def findMiddleValue(self):
-          slow_pointer = self.head
+          slow_pointer = self.head 
           fast_pointer = self.head
           if self.head is not None:
               while (fast_pointer is not None and fast_pointer.next is not None):
