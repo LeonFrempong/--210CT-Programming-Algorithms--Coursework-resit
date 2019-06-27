@@ -3,6 +3,15 @@ implement a function that finds the node in a binary search tree
 containing the minimum value in the tree
 """
 
+"""
+Title: Binary Search Tree
+Author: Hintea, D.
+Date: 2019
+Availability: http://moodle.coventry.ac.uk
+*/
+"""
+
+
 class BinTreeNode(object):
  
     def __init__(self, value):

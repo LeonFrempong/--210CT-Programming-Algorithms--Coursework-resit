@@ -1,5 +1,12 @@
+
 # q2) double linked list delete node function
 
+"""
+Title: Doubly Linked List Implementation
+Author: Hintea, D.
+Date: 2019
+Availability: http://moodle.coventry.ac.uk
+"""
 class Node(object):
       def __init__(self, value):
           self.value=value
