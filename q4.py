@@ -26,12 +26,12 @@ def tree_insert( tree, item):
             else:
                 tree_insert(tree.right,item)
     return tree
-
-def tree_find_min(tree):
-    if tree.left != None:
-        tree_find_min(tree.left)
+#this function finds the minimum value in the tree.
+def tree_find_min(tree): 
+    if tree.left != None: # checks if there are node in the left tree
+        tree_find_min(tree.left) # if there is a left node in the tree, then the function will find the minimum node 
     else:
-        print(tree.value)
+        print(tree.value) # print function prints out the minimum tree 
 
 def postorder(tree):
     if(tree.left!=None):
