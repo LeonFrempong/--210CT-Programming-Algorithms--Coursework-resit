@@ -7,6 +7,10 @@ Author: Hintea, D.
 Date: 2019
 Availability: http://moodle.coventry.ac.uk
 """
+
+import unittest
+def test_int(self):
+    self.assertEqual(11, 10, 12, 4, 5, 64,6,8,12)
 class Node(object):
       def __init__(self, value):
           self.value=value
@@ -78,6 +82,7 @@ if __name__ == '__main__':
       l.display()
       l.findMiddleValue()
 
+      unittest.main()
       
       
 
