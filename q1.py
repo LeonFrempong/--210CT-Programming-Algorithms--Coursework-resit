@@ -1,4 +1,10 @@
 #Implement Merge Sort and explain its performance using the Big O notation
+
+import unittest
+def test_int(self):
+    self.assertEqual(11, 10, 12, 4, 5, 6)
+
+
 def mergeSort(L):
     if len(L)> 1:
         mid = len(L)// 2 # finding out the mid of the array
@@ -42,6 +48,8 @@ if __name__ == '__main__':
     mergeSort(L)
     print("Sorted array is now: ")
     merge(L)
+
+    unittest.main()
             
 
 
