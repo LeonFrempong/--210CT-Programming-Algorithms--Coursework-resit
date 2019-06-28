@@ -10,7 +10,9 @@ Date: 2019
 Availability: http://moodle.coventry.ac.uk
 */
 """
-
+import unittest
+def test_int(self):
+    self.assertEqual(11, 10, 12, 4, 5, 64,6,8,12)
 
 class BinTreeNode(object):
  
@@ -68,5 +70,8 @@ if __name__ == '__main__':
   tree_insert(t,11)
   in_order(t)
 
-  tree_find_min(t)  
+  tree_find_min(t)
+
+  unittest.main()
+
 
