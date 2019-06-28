@@ -4,6 +4,7 @@ allows new  nodes  and  edges  to  be inserted and deleted
 """
 
 #import unittest
+import unittest
 
 edges = ['12', '24', '34', '35', '45']
 
@@ -71,9 +72,9 @@ for edge in edges:
     g.add_edge(edge[:1], edge[1:])
 g.print_graph()
 
-"""
+
 class graph(unittest.TestCase):
     self.assertEqual('12', '24')
 if __name__ == '__main__':
-unittest.main
-"""
+    unittest.main
+
